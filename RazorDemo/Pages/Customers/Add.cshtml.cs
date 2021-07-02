@@ -1,8 +1,7 @@
 namespace RazorDemo.Pages.Customers
 {
     using Microsoft.AspNetCore.Mvc.RazorPages;
-
-    public class UpdateModel : PageModel
+    public class AddModel : PageModel
     {
         public void OnGet()
         {

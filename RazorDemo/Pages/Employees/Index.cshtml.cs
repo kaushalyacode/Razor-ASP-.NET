@@ -1,8 +1,7 @@
-namespace RazorDemo.Pages.Customers
+namespace RazorDemo.Pages.Employees
 {
     using Microsoft.AspNetCore.Mvc.RazorPages;
-
-    public class UpdateModel : PageModel
+    public class IndexModel : PageModel
     {
         public void OnGet()
         {
