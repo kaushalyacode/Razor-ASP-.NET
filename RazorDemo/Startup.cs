@@ -6,6 +6,7 @@ namespace RazorDemo
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using Razor.Demo.RoutingConstraints;
     using Razor.Services;
 
     public class Startup
@@ -25,6 +26,7 @@ namespace RazorDemo
                 options.LowercaseUrls         = true;
                 options.LowercaseQueryStrings = true;
                 options.AppendTrailingSlash   = true;
+                options.ConstraintMap.Add("even", typeof(EvenConstraints));
             });
             services.AddSingleton<ICustomerRepository, CustomerRepository>();
         }
