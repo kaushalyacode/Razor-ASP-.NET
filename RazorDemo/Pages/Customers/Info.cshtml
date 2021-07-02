@@ -1,4 +1,12 @@
-﻿@page "/view/{id}"
+﻿@page "/view/{id:int?}"
+<!--
+ "/view/{id:min(1):max(100)}"
+ "/view/{id:range(1,100)}"
+ "/view/{fname:maxlength(1)}"
+ "/view/{fname:minlength(100)}"
+ "/view/{fname:length(1,100)}"
+ "/view/{fname:length(10)}"
+-->
 @model Razor.Demo.Pages.Customers.InfoModel
 @{
 }
