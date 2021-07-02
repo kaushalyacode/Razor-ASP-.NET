@@ -1,4 +1,5 @@
-﻿@page 
+﻿@page
+
 @model RazorDemo.Pages.Custoemers.IndexModel
 @{
     ViewData["Title"] = "Customers";
@@ -13,7 +14,7 @@
         <div class="card-body">
             <h5 class="card-title">@customer.FirstName</h5>
             <p class="card-text">@customer.FirstName @customer.LastName</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a asp-page="/Customers/Info" asp-route-Id="@customer.Id" class="btn btn-primary">view</a>
         </div>
 
     }

@@ -8,7 +8,7 @@
         private List<Customer> customers;
         public CustomerRepository()
         {
-            customers = new List<Customer>()
+            this.customers = new List<Customer>()
             {
                         new Customer
                         { 
@@ -33,10 +33,17 @@
                         }
             };
         }
-
         public IEnumerable<Customer> GetAllCustomers()
         {
             return this.customers;
+        }
+        public Customer GetCustomer(int id)
+        {
+            return new Customer { 
+                FirstName="moke first name",
+                LastName ="moke lastname",
+                Id=1
+            };
         }
     }
 }
