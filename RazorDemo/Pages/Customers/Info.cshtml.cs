@@ -17,6 +17,8 @@ namespace Razor.Demo.Pages.Customers
         {
             _customerRepository = customerRepository;
         }
+        [BindProperty(SupportsGet =true)]
+        public int id { get; set; }
         public void OnGet(int Id)
         {
            customer =
