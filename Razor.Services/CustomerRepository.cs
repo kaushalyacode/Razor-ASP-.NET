@@ -14,19 +14,22 @@
                         { 
                           FirstName = "KAUSHALYA",
                           LastName  = "HARSHANATH",
-                          Id        =  1
+                          Id        =  1,
+                          imagePath ="image1.png"
                         },
                         new Customer
                         {
                           FirstName = "KAUSHALYA2",
                           LastName  = "HARSHANATH2",
-                          Id        =  2
+                          Id        =  2,
+                          imagePath ="image1.png"
                         },
                         new Customer
                         {
                           FirstName = "KAUSHALYA3",
                           LastName  = "HARSHANATH3",
-                          Id        =  3
+                          Id        =  3,
+                          imagePath ="image1.png"
                         }
             };
         }

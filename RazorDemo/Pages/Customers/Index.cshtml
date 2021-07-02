@@ -1,9 +1,20 @@
 ﻿@page
 @model RazorDemo.Pages.Custoemers.IndexModel
 @{
+    ViewData["Title"] = "Customers";
 }
 
-<h1>Employee list</h1>
-@Model.Customers.First()
-<br />
-@Model.Customers.Last()
+@Model._customer.Count()
+<div class="card" style="width: 18rem;">
+    @foreach (var customer in Model._customer)
+    {
+
+        <img class="card-img-top" src="~/images/@customer.imagePath" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">@customer.FirstName</h5>
+            <p class="card-text">@customer.FirstName @customer.LastName</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+
+    }
+</div>

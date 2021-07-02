@@ -5,6 +5,8 @@ namespace RazorDemo
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
+    using Razor.Services;
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -18,6 +20,7 @@ namespace RazorDemo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<ICustomerRepository, CustomerRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

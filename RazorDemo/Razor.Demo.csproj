@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Razor.Services\Razor.Services.csproj" />
+    <ProjectReference Include="..\RazorModels\Razor.Models.csproj" />
+  </ItemGroup>
+
 </Project>
