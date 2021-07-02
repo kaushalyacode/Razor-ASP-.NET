@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorDemo", "RazorDemo\RazorDemo.csproj", "{41BA076C-A012-4BE5-A0D8-C38F103A7641}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor.Demo", "RazorDemo\Razor.Demo.csproj", "{41BA076C-A012-4BE5-A0D8-C38F103A7641}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorModels", "RazorModels\RazorModels.csproj", "{C1886FB0-BD40-4C5E-ACD6-7A1D95C7DC13}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor.Models", "RazorModels\Razor.Models.csproj", "{C1886FB0-BD40-4C5E-ACD6-7A1D95C7DC13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Razor.Services", "Razor.Services\Razor.Services.csproj", "{2B230A7A-92B1-495D-BC9E-7CB52B58152E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C1886FB0-BD40-4C5E-ACD6-7A1D95C7DC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1886FB0-BD40-4C5E-ACD6-7A1D95C7DC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1886FB0-BD40-4C5E-ACD6-7A1D95C7DC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B230A7A-92B1-495D-BC9E-7CB52B58152E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B230A7A-92B1-495D-BC9E-7CB52B58152E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B230A7A-92B1-495D-BC9E-7CB52B58152E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B230A7A-92B1-495D-BC9E-7CB52B58152E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
