@@ -11,6 +11,7 @@ namespace RazorDemo.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
+        public string demoMessege { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -19,7 +20,7 @@ namespace RazorDemo.Pages
 
         public void OnGet()
         {
-
+            this.demoMessege = $"first messege : hello world {DateTime.Now}";
         }
     }
 }
