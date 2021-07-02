@@ -14,7 +14,7 @@
         <div class="card-body">
             <h5 class="card-title">@customer.FirstName</h5>
             <p class="card-text">@customer.FirstName @customer.LastName</p>
-            <a asp-page="/Customers/Info" asp-route-Id="@customer.Id" class="btn btn-primary">view</a>
+            <a asp-page="/Customers/Info" asp-route-Id="@customer.Id" asp-route-fname="@customer.FirstName"class="btn btn-primary">view</a>
         </div>
 
     }
